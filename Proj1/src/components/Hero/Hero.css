@@ -1,0 +1,124 @@
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* Glitch Effect */
+.glitch {
+  font-size: 4rem;
+  color: #00ffe7;
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #ff00ff;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+  animation: glitchTop 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  animation: glitchBottom 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitchTop {
+  0% {
+    clip: rect(0, 900px, 0, 0);
+  }
+  5% {
+    clip: rect(0, 900px, 40px, 0);
+  }
+  10% {
+    clip: rect(0, 900px, 0, 0);
+  }
+}
+
+@keyframes glitchBottom {
+  0% {
+    clip: rect(0, 900px, 0, 0);
+  }
+  5% {
+    clip: rect(40px, 900px, 90px, 0);
+  }
+  10% {
+    clip: rect(0, 900px, 0, 0);
+  }
+}
+
+/* Typewriter Text */
+.typewriter {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #00ffe7;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: 2px solid #00ffe7;
+  color: #00ffe7;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7 inset;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00ffe7;
+  color: #000;
+  box-shadow: 0 0 20px #00ffe7, 0 0 40px #00ffe7 inset;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .glitch {
+    font-size: 3rem;
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+  }
+}
+.glow-name {
+  font-size: 4rem;
+  color: #00ffe7;
+  text-shadow: 0 0 0px #00ffe7, 0 0 5px #00ffe7, 0 0 0px #00ffe7,
+    0 0 10px #00ffe7, 0 0 80px #00ffe7;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-name:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff,
+    0 0 80px #ff00ff;
+}

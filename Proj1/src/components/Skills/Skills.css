@@ -1,0 +1,83 @@
+.skills-section {
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.skills-section h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #00ffe7;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #00ffe7;
+  box-shadow: 0 0 15px #00ffe7, 0 0 30px #00ffe7 inset;
+  border-radius: 15px;
+  width: 220px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00ffe7, 0 0 40px #00ffe7 inset;
+}
+
+.skill-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.1);
+}
+
+/* Custom Colors for Icons */
+.html {
+  color: #ff5733;
+}
+
+.css {
+  color: #2965f1;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #68a063;
+}
+
+.python {
+  color: #ffde57;
+}
+
+.database {
+  color: #f29111;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
