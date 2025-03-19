@@ -1,14 +1,26 @@
-body,
+/* Ensure the whole page stretches full height */
 html,
-#root {
+body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden; /* Optional: prevent scrolling */
-  background: #0f0f0f;
 }
 
-.App {
-  position: relative;
-  z-index: 1;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.main-content {
+  flex: 1; /* Takes remaining space, pushes footer down */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #0f0f0f; /* dark background */
+  color: #fff; /* white text */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
 }

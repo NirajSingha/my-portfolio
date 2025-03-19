@@ -1,0 +1,45 @@
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+  position: relative; /* or fixed if you want it stuck at the bottom */
+  bottom: 0;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  color: #0ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+.footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.5);
+}
+
+.footer a {
+  color: #0ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
