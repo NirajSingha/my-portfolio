@@ -37,3 +37,23 @@
 .nav-links a:hover {
   color: #00ffcc;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide links */
+  }
+
+  .hamburger {
+    display: block; /* show menu icon */
+  }
+}

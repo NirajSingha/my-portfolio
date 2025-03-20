@@ -26,12 +26,12 @@ const About = () => {
             </div>
             <div className="stat">
               <h3>10+</h3>
-              <p>Happy Clients</p>
+              <p>Designs Implemented</p>
             </div>
           </div>
           <a
-            href="F:\PORTFOLIO\Proj1\src\assets\Niraj_Singha_Frontend_Developer_CV.pdf"
-            download
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            download="Niraj Singha resume.pdf"
             className="btn-neon"
           >
             Download CV
